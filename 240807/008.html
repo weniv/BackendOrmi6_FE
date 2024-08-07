@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- form 사용자가 입력한 데이터를 서버로 보내기 위한 양식
+        input 사용자가 데이터를 입력하는 부분
+        submit 사용자가 입력한 데이터를 서버로 보내는 버튼 -->
+
+        <!-- get 방식은 데이터가 노출이 되어서 보안에 취약합니다. 로그인, 회원가입과 같이 민감한 데이터를 다룰때 get 방식은 사용하지 않습니다. -->
+        <!-- get 방식은 노출이 되어도 상관없는 상황에서 많이 사용을 합니다. 예를들면 검색창 -->
+        <!-- 잘못된 예 -->
+        <form action="/login" method="get">
+            <label for="id">아이디</label>
+            <input type="text" name="id" id="id" />
+            <label for="password">비밀번호</label>
+            <input type="password" name="password" id="password" />
+            <input type="submit" value="로그인" />
+        </form>
+
+        <form action="/login" method="post">
+            <label for="id" maxlength="5" minlength="2" required>아이디</label>
+            <input type="text" name="id" id="id" />
+            <label for="password">비밀번호</label>
+            <input type="password" placeholder="비밀번호" name="password" id="password" />
+            <input type="submit" value="로그인" />
+            <input type="text" value="읽기전용" readonly />
+        </form>
+    </body>
+</html>

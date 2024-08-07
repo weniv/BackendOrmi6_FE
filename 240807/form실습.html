@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- 연습문제1: 유데미나 인프런같은 서비스를 만들고 있어요. 검색창을 구현할겁니다. 알맞은 메서드를 작성하세요. -->
+        <!-- 검색 기능은 서버의 데이터를 변경하지 않고 정보를 요청하는 작업이기 때문에 get 메소드가 적합합니다. -->
+        <form action="" method="get">
+            <input type="text" name="q" />
+            <button>검색</button>
+        </form>
+
+        <!-- 연습문제2: 공개 게시판에 게시물을 올리는 코드를 작성해야 합니다. 알맞은 메서드를 작성하세요. -->
+        <!-- 게시글이 10000자라고 생각해보세요. 이 URL로 보내는 것이 맞을까요? -->
+        <!-- URL로 만들어진다는 것은 누군가 그 URL로 수많은 요청을 보낼수도 있다는 것을 가정해야 합니다. 예를 들어 GET으로 만들었을 경우 타인이 해당 URL로 접속하면 게시물이 하나 더 만들어집니다. -->
+        <form action="" method="post">
+            <input type="text" name="title" />
+            <input type="text" name="content" />
+            <input type="text" name="date" />
+            <button>게시판</button>
+        </form>
+
+        <!-- 연습문제3: 회원가입을 구현하려고 합니다. 알맞은 메서드를 작성하세요. -->
+        <!-- 회원가입은 새로운 데이터를 생성하는 작업입니다. 비밀번호와 같은 민감한 정보를 포함하고 있어 URL에 노출되면 안 됩니다. -->
+        <form action="" method="post">
+            <input type="text" name="id" />
+            <input type="password" name="pw" />
+            <input type="text" name="email" />
+            <button>회원가입</button>
+        </form>
+
+        <!-- 연습문제4: 로그인을 구현하려고 합니다. 알맞은 메서드를 작성하세요. -->
+        <!-- 로그인은 서버에 인증 정보를 전송하는 작업입니다. 비밀번호와 같은 민감한 정보를 URL에 노출시키면 안 됩니다. -->
+        <form action="" method="post">
+            <input type="text" name="from" />
+            <input type="text" name="to" />
+            <input type="text" name="date" />
+            <button>검색</button>
+        </form>
+
+        <!-- 연습문제5: 항공권 검색을 하는 코드를 작성하게 되었습니다. 알맞은 메서드를 작성하세요.  -->
+        <!-- 1번과 동일 -->
+        <form action="" method="get">
+            <input type="text" name="q" />
+            <button>검색</button>
+        </form>
+    </body>
+</html>
