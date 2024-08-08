@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .key {
+                color: red;
+            }
+
+            /* #RRGGBB 구조  */
+            .code {
+                /* 흰색*/
+                /* color: #ffffff; #fff*/
+                /* 검은색 */
+                /* color: #000000; #000 */
+            }
+
+            /* 레드, 그린, 블루 순으로 0부터 255까지의 정수값 */
+            .rgb {
+                color: rgb(255, 0, 0);
+            }
+
+            .rgba {
+                color: rgba(255, 0, 0, 0.1);
+            }
+
+            .trans {
+                color: transparent;
+            }
+
+            div {
+                color: aqua;
+            }
+
+            /* currentColor는 현재 요소의 색상 값을 상속받아 다른 속성에 적용할 수 있음.
+            두번째 p 태그에 aqua 색상의 border가 설정된 이유는 본인의 color값이 지정되어 있지않아 부모의 color값을 상속받아 온 것 */
+            p {
+                border: 1px solid currentColor;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p class="key">안녕</p>
+            <p class="code">안녕</p>
+            <p class="rgb">안녕</p>
+            <p class="rgba">안녕</p>
+            <p class="trans">안녕</p>
+        </div>
+    </body>
+</html>
